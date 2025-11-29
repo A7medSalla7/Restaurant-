@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="495.0" prefWidth="400.0" spacing="10" style="-fx-padding: 20;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication23.AddUserController">
+    <Label style="-fx-font-size: 16; -fx-font-weight: bold;" text="Add New User" />
+    <Label text="User Type" />
+    <ComboBox fx:id="role" prefWidth="Infinity" promptText="Select user type" />
+   <Label layoutX="30.0" layoutY="130.0" text="Full Name" />
+   <TextField fx:id="fullNameField" layoutX="30.0" layoutY="158.0" promptText="Enter Full Name" />
+    <Label text="Username" />
+    <TextField fx:id="usernameField" promptText="Enter username" />
+    <Label text="Password" />
+    <TextField fx:id="passwordField" promptText="Enter password" />
+    <Label text="Email" />
+    <TextField fx:id="emailField" promptText="Enter email" />
+   <Label layoutX="30.0" layoutY="258.0" text="Phone Number" />
+   <TextField fx:id="phoneNumber" layoutX="30.0" layoutY="286.0" promptText="Enter Phone Number" />
+   <HBox prefHeight="38.0" prefWidth="360.0" />
+    <HBox alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="360.0" spacing="10">
+        <Button onAction="#handleCancel" prefHeight="34.0" prefWidth="76.0" style="-fx-background-color: #d9534f; -fx-text-fill: white;" text="Cancel" />
+        <Button onAction="#handleAddUser" prefHeight="33.0" prefWidth="71.0" style="-fx-background-color: #5cb85c; -fx-text-fill: white;" text="Add User" />
+    </HBox>
+</VBox>
